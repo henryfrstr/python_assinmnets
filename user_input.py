@@ -1,7 +1,7 @@
 print("İf you forgot your password please follow instructions...")
-name = input("Please Enter your name: ").lower().strip()
+name = input("Please Enter your name: ").capitalize().strip()
 
-if name == "henry":
-    print("Hello, {}! The password is asd@123*".format(name.capitalize()))
+if name == "Henry":
+    print("Hello, {}! The password is asd@123*".format(name))
 else:
-    print("Hello {}! See you later.")
+    print("Hello {}! See you later.".format(name))
