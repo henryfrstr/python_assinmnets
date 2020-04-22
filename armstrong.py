@@ -16,8 +16,8 @@ while True:
     elif number.count(".") == 1 or number.count(",") == 1:
         print("Please enter a integer number.")
 
+    elif number.count("-") == 1 and number.index("-") == 0 and number.replace("-", "1").isnumeric():
+        print("Please enter a positive number")
+
     else:
-        if number.count("-") == 1 and number.index("-") == 0 and number.replace("-", "1").isnumeric():
-            print("Please enter a positive number")
-        else:
-            print("Do not use any entries other than numeric values")
+        print("Do not use any entries other than numeric values")
