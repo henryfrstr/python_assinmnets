@@ -1,5 +1,5 @@
 while True:
-    number = input("Enter a positive Number:")
+    number = input("Enter a positive Number:").strip()
     numberofdigits = len(number)
     summ = 0
 
@@ -13,7 +13,7 @@ while True:
         else:
             print(number, "is not a Amstrong Number.")
 
-    elif number.count(".") == 1 or number.count(",") == 1:
+    elif number.count(".") == 1 and number.replace(".", "1").isnumeric() or number.count(",") == 1 and number.replace(",", "1").isnumeric():
         print("Please enter a integer number.")
 
     elif number.count("-") == 1 and number.index("-") == 0 and number.replace("-", "1").isnumeric():
