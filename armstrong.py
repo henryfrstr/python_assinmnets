@@ -7,14 +7,15 @@ while True:
     if number == "q":
         print("See you...")
         break
+
     else:
         if number.isnumeric():
-
             for i in range(numberofdigits):
                 summ += int(number[i]) ** numberofdigits
 
             if summ == int(number):
                 print(number, "is a Amstrong Number.")
+
             else:
                 print(number, "is not a Amstrong Number.")
 
