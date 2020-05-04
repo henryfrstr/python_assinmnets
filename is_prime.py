@@ -1,5 +1,4 @@
 number = int(input("Enter a number: "))
-
 primes = []
 for prime in range(2, number + 1):
     is_prime = True
